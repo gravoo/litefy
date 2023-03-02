@@ -24,8 +24,8 @@ export class PlayerComponent extends SettingsBase implements OnInit, OnChanges {
     ) {
         super(injector);
         this.defaultLanguage = window.localStorage.getItem("languageSelected");
-        translate.addLangs(["pt", "en", "es", "he"]);
-        translate.setDefaultLang(this.defaultLanguage || "pt");
+        translate.addLangs(["pt-BR", "en", "es", "he"]);
+        translate.setDefaultLang(this.defaultLanguage || "pt-BR");
     }
 
     defaultLanguage: string;
